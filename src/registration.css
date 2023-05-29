@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #adacac;
+    font-family: sans-serif;
+
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    margin: 48px auto;
+    max-width: 500px;
+    padding: 48px;
+}
+
+h1 {
+    color: #444;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.input {
+    display: block;
+    border: none;
+    border-bottom: 4px solid #ccc;
+    font-size: 17px;
+    margin-bottom: 8px;
+    width: 100%;
+    outline: none;
+    padding: 8px 2px;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.divPassword {
+    margin-top: 30px;
+}
+
+.input:focus {
+    border-color: #3f51b5;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+label {
+    margin: 5px;
+    color: #777;
+    font-weight: bold;
+    font-size: 16px;
+    pointer-events: none;
+    transition: transform 0.4s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+.forgot-password {
+    color: #3f51b5;
+    font-size: 14px;
+    text-align: right;
+    float: right;
+    margin-right: 5px;
+}
+
+
+.signin {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-input {
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.signin-input:hover {
+    background-color: #5249db;
+}
+
+.Google {
+    display: block;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Google::before {
+    content: "";
+    width: 190px;
+    height: 2px;
+    background: #494949;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.Google::after {
+    content: "";
+    display: block;
+    width: 190px;
+    height: 2px;
+    background: #494949;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.btn_google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-button {
+    background-color: #fff;
+    color: #757575;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.google-button:hover {
+    background-color: #4285f4;
+    color: #fff;
+    border-color: #4285f4;
+}
+
+.google-button .icon {
+    margin-right: 10px;
+}
+
+.google-button .icon i {
+    font-size: 20px;
+}
+
+.google-button .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.no-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.no_account {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.admin {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.checkbox {
+    display: block;
+}
+
+/*Responsive Design
+    tablet with orientation
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    form {
+        width: 85%;
+        margin: 18vh auto;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 1.4rem;
+        padding: 10px 5px;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .btn_google {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    form {
+        width: 60%;
+        margin: 8vh auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 15px 30px;
+    }
+
+    .Google::before {
+        content: "";
+        width: 170px;
+        height: 2px;
+        background: #494949;
+        left: 0;
+        top: 50%;
+        position: absolute;
+    }
+
+    .Google::after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 2px;
+        background: #494949;
+        right: 0;
+        top: 50%;
+        position: absolute;
+    }
+
+
+}
+
+/* Responsive design for phones*/
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    form {
+        margin: 10vh 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    label,
+    input {
+        font-size: 14px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+
+    .no-account,
+    .admin {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .input-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .no-account {
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .signin button,
+    .google-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .google-button {
+        margin-top: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+    .Google::before {
+        content: "";
+        width: 140px;
+        height: 2px;
+        background: #494949;
+        left: 0;
+        top: 50%;
+        position: absolute;
+    }
+
+    .Google::after {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 2px;
+        background: #494949;
+        right: 0;
+        top: 50%;
+        position: absolute;
+    }
+
+}
